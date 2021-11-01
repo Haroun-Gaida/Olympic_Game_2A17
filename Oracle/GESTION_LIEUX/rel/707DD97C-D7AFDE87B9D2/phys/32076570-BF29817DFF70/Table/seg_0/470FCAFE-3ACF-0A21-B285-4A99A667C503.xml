@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="VERIFIER_VALIDATION" directorySegmentName="seg_0" id="470FCAFE-3ACF-0A21-B285-4A99A667C503">
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-01 15:29:10 UTC</createdTime>
+<ownerDesignName>GESTION_LIEUX</ownerDesignName>
+<schemaObject>EC00F58E-F12C-6667-112F-27802B52EDE9</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>B86FC478-BB37-1295-0C05-8018EB7969A2</segment>
+<tableSpace>3594C73C-E340-D7C6-2C27-74E2E44867FE</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ETAT" id="1EB1FB39-145D-0EB3-0F16-8D0B81252E40">
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-01 15:29:10 UTC</createdTime>
+<ownerDesignName>GESTION_LIEUX</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOM" id="816D8963-3EF3-24FD-8EBC-C83EBE976243">
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-01 15:29:10 UTC</createdTime>
+<ownerDesignName>GESTION_LIEUX</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="CLEE" id="9DF915E7-F4CC-A564-B808-7608A1AA8264">
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-01 15:29:10 UTC</createdTime>
+<ownerDesignName>GESTION_LIEUX</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+</TableProxyOraclev11g>

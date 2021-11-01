@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="GLi" id="707DD97C-77AC-8E8B-F525-D7AFDE87B9D2" mainViewID="ECE2B7FD-34C2-7C0A-EE6F-80D8B9B13414">
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-01 15:13:32 UTC</createdTime>
+<ownerDesignName>GESTION_LIEUX</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+<importConnectionStamps>
+<importConnectionStamp class="oracle.dbtools.crest.imports.DBConnectionStamp">
+<connName>data</connName>
+<connUser>DHIA</connUser>
+<connType>1</connType>
+</importConnectionStamp>
+</importConnectionStamps>
+</relationalModel>

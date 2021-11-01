@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CFBD3387-0F47-81D5-834F-AE64A569ADFB" containerWithKeyObject="470FCAFE-3ACF-0A21-B285-4A99A667C503" localFKIndex="9DF915E7-F4CC-A564-B808-7608A1AA8264" name="CLEE">
+<sourceConnName>data</sourceConnName>
+<sourceObjSchema>DHIA</sourceObjSchema>
+<sourceObjName>CLEE</sourceObjName>
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-01 15:29:10 UTC</createdTime>
+<ownerDesignName>GESTION_LIEUX</ownerDesignName>
+<referredTableLongName>DHIA.TERRAIN_DE_JEUX</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>502FC88D-6B18-BF59-5B1B-5C7144A4B0EE</referredTableID>
+<keyObject>93265F33-1C6E-15D0-B88A-3563EB6E1714</keyObject>
+<referredKeyID>93265F33-1C6E-15D0-B88A-3563EB6E1714</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>NOM</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

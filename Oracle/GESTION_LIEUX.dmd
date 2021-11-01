@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="GESTION_LIEUX" id="DAE93613-D41B-E518-9762-E8BCE57D5048" version="3.5">
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-01 14:21:11 UTC</createdTime>
+<ownerDesignName>GESTION_LIEUX</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>DAE93613-D41B-E518-9762-E8BCE57D5048</designId>
+</OSDM_Design>

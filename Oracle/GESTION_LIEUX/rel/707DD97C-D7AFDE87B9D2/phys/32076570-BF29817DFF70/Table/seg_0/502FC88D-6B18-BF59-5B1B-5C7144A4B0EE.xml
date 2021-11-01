@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="TERRAIN_DE_JEUX" directorySegmentName="seg_0" id="502FC88D-6B18-BF59-5B1B-5C7144A4B0EE">
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-01 15:28:13 UTC</createdTime>
+<ownerDesignName>GESTION_LIEUX</ownerDesignName>
+<schemaObject>EC00F58E-F12C-6667-112F-27802B52EDE9</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>B86FC478-BB37-1295-0C05-8018EB7969A2</segment>
+<tableSpace>3594C73C-E340-D7C6-2C27-74E2E44867FE</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NOM" id="17B38B38-F4E6-5A15-8264-652EA7A7E6E5">
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-01 15:28:13 UTC</createdTime>
+<ownerDesignName>GESTION_LIEUX</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LIEUX" id="99530B04-C6B7-80B5-2570-04B2FF4AAE9F">
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-01 15:28:13 UTC</createdTime>
+<ownerDesignName>GESTION_LIEUX</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="N_TERRAIN" id="93265F33-1C6E-15D0-B88A-3563EB6E1714">
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-01 15:28:13 UTC</createdTime>
+<ownerDesignName>GESTION_LIEUX</ownerDesignName>
+<schemaObject>EC00F58E-F12C-6667-112F-27802B52EDE9</schemaObject>
+<segment>1609BCEE-55C8-0FEF-D7C3-7BD5757B73F7</segment>
+<tableSpace>3594C73C-E340-D7C6-2C27-74E2E44867FE</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="N_TERRAIN" id="35D974B9-F5F5-8831-F5A0-679743DE29DC">
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-01 15:28:13 UTC</createdTime>
+<ownerDesignName>GESTION_LIEUX</ownerDesignName>
+<segment>1609BCEE-55C8-0FEF-D7C3-7BD5757B73F7</segment>
+<tableSpace>3594C73C-E340-D7C6-2C27-74E2E44867FE</tableSpace>
+<existingIndex>93265F33-1C6E-15D0-B88A-3563EB6E1714</existingIndex>
+<indexSegment>1609BCEE-55C8-0FEF-D7C3-7BD5757B73F7</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

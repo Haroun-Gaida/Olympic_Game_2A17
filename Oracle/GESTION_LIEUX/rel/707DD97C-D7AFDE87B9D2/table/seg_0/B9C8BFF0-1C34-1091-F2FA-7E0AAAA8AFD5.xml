@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B9C8BFF0-1C34-1091-F2FA-7E0AAAA8AFD5" schemaObject="EC00F58E-F12C-6667-112F-27802B52EDE9" name="LOGEMENT">
+<sourceConnName>data</sourceConnName>
+<sourceObjSchema>DHIA</sourceObjSchema>
+<sourceObjName>LOGEMENT</sourceObjName>
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-01 15:28:05 UTC</createdTime>
+<ownerDesignName>GESTION_LIEUX</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NOM" id="5788206C-3CF5-DF20-7C83-9A729F042ACB">
+<sourceConnName>data</sourceConnName>
+<sourceObjSchema>LOGEMENT</sourceObjSchema>
+<sourceObjName>NOM</sourceObjName>
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-01 15:28:05 UTC</createdTime>
+<ownerDesignName>GESTION_LIEUX</ownerDesignName>
+<constraintName>VF_LOGEMENT</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="LENGTH(NOM)&gt;2"/>
+<implementationDef dbType="Oracle Database 11g" definition="LENGTH(NOM)&gt;2"/>
+</checkConstraint>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COORDONNEE" id="6E696BD5-F364-73C0-CBF1-BA1F9680BF7E">
+<sourceConnName>data</sourceConnName>
+<sourceObjSchema>LOGEMENT</sourceObjSchema>
+<sourceObjName>COORDONNEE</sourceObjName>
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-01 15:28:05 UTC</createdTime>
+<ownerDesignName>GESTION_LIEUX</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="09FE4269-C968-A7F8-5AF4-F8957ACB3458" name="N_LOGEMENT">
+<sourceConnName>data</sourceConnName>
+<sourceObjSchema>DHIA</sourceObjSchema>
+<sourceObjName>N_LOGEMENT</sourceObjName>
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-01 15:28:05 UTC</createdTime>
+<ownerDesignName>GESTION_LIEUX</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5788206C-3CF5-DF20-7C83-9A729F042ACB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2F43045D-AE2E-05CC-572A-9CB936FF09EA" name="NC_LOGEMENT">
+<sourceConnName>data</sourceConnName>
+<sourceObjSchema>DHIA</sourceObjSchema>
+<sourceObjName>NC_LOGEMENT</sourceObjName>
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-01 15:28:05 UTC</createdTime>
+<ownerDesignName>GESTION_LIEUX</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5788206C-3CF5-DF20-7C83-9A729F042ACB"/>
+<colUsage columnID="6E696BD5-F364-73C0-CBF1-BA1F9680BF7E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E5F0FCB6-4CB9-2F89-EF8F-8AC059A8D9DE" schemaObject="EC00F58E-F12C-6667-112F-27802B52EDE9" name="NC_LOGEMENT">
+<sourceConnName>data</sourceConnName>
+<sourceObjSchema>DHIA</sourceObjSchema>
+<sourceObjName>NC_LOGEMENT</sourceObjName>
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-01 15:28:05 UTC</createdTime>
+<ownerDesignName>GESTION_LIEUX</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5788206C-3CF5-DF20-7C83-9A729F042ACB"/>
+<colUsage columnID="6E696BD5-F364-73C0-CBF1-BA1F9680BF7E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="01B37C53-656C-0D76-8AAF-99884655A954" schemaObject="EC00F58E-F12C-6667-112F-27802B52EDE9" name="N_LOGEMENT">
+<sourceConnName>data</sourceConnName>
+<sourceObjSchema>DHIA</sourceObjSchema>
+<sourceObjName>N_LOGEMENT</sourceObjName>
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-01 15:28:05 UTC</createdTime>
+<ownerDesignName>GESTION_LIEUX</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5788206C-3CF5-DF20-7C83-9A729F042ACB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

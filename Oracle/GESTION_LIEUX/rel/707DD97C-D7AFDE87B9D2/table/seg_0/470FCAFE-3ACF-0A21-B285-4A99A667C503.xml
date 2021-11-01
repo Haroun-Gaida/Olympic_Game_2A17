@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="470FCAFE-3ACF-0A21-B285-4A99A667C503" schemaObject="EC00F58E-F12C-6667-112F-27802B52EDE9" name="VERIFIER_VALIDATION">
+<sourceConnName>data</sourceConnName>
+<sourceObjSchema>DHIA</sourceObjSchema>
+<sourceObjName>VERIFIER_VALIDATION</sourceObjName>
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-01 15:29:10 UTC</createdTime>
+<ownerDesignName>GESTION_LIEUX</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NOM" id="816D8963-3EF3-24FD-8EBC-C83EBE976243">
+<sourceConnName>data</sourceConnName>
+<sourceObjSchema>VERIFIER_VALIDATION</sourceObjSchema>
+<sourceObjName>NOM</sourceObjName>
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-01 15:29:10 UTC</createdTime>
+<ownerDesignName>GESTION_LIEUX</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CFBD3387-0F47-81D5-834F-AE64A569ADFB" referredColumn="17B38B38-F4E6-5A15-8264-652EA7A7E6E5"/>
+</associations>
+</Column>
+<Column name="ETAT" id="1EB1FB39-145D-0EB3-0F16-8D0B81252E40">
+<sourceConnName>data</sourceConnName>
+<sourceObjSchema>VERIFIER_VALIDATION</sourceObjSchema>
+<sourceObjName>ETAT</sourceObjName>
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-01 15:29:10 UTC</createdTime>
+<ownerDesignName>GESTION_LIEUX</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9DF915E7-F4CC-A564-B808-7608A1AA8264" name="CLEE">
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-01 15:29:10 UTC</createdTime>
+<ownerDesignName>GESTION_LIEUX</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="816D8963-3EF3-24FD-8EBC-C83EBE976243"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="LOGEMENT" directorySegmentName="seg_0" id="B9C8BFF0-1C34-1091-F2FA-7E0AAAA8AFD5">
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-01 15:28:05 UTC</createdTime>
+<ownerDesignName>GESTION_LIEUX</ownerDesignName>
+<schemaObject>EC00F58E-F12C-6667-112F-27802B52EDE9</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>B86FC478-BB37-1295-0C05-8018EB7969A2</segment>
+<tableSpace>3594C73C-E340-D7C6-2C27-74E2E44867FE</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NOM" id="5788206C-3CF5-DF20-7C83-9A729F042ACB">
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-01 15:28:05 UTC</createdTime>
+<ownerDesignName>GESTION_LIEUX</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COORDONNEE" id="6E696BD5-F364-73C0-CBF1-BA1F9680BF7E">
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-01 15:28:05 UTC</createdTime>
+<ownerDesignName>GESTION_LIEUX</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="N_LOGEMENT" id="01B37C53-656C-0D76-8AAF-99884655A954">
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-01 15:28:05 UTC</createdTime>
+<ownerDesignName>GESTION_LIEUX</ownerDesignName>
+<schemaObject>EC00F58E-F12C-6667-112F-27802B52EDE9</schemaObject>
+<segment>1609BCEE-55C8-0FEF-D7C3-7BD5757B73F7</segment>
+<tableSpace>3594C73C-E340-D7C6-2C27-74E2E44867FE</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="NC_LOGEMENT" id="E5F0FCB6-4CB9-2F89-EF8F-8AC059A8D9DE">
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-01 15:28:05 UTC</createdTime>
+<ownerDesignName>GESTION_LIEUX</ownerDesignName>
+<schemaObject>EC00F58E-F12C-6667-112F-27802B52EDE9</schemaObject>
+<segment>1609BCEE-55C8-0FEF-D7C3-7BD5757B73F7</segment>
+<tableSpace>3594C73C-E340-D7C6-2C27-74E2E44867FE</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="N_LOGEMENT" id="09FE4269-C968-A7F8-5AF4-F8957ACB3458">
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-01 15:28:05 UTC</createdTime>
+<ownerDesignName>GESTION_LIEUX</ownerDesignName>
+<segment>1609BCEE-55C8-0FEF-D7C3-7BD5757B73F7</segment>
+<tableSpace>3594C73C-E340-D7C6-2C27-74E2E44867FE</tableSpace>
+<existingIndex>01B37C53-656C-0D76-8AAF-99884655A954</existingIndex>
+<indexSegment>1609BCEE-55C8-0FEF-D7C3-7BD5757B73F7</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="NC_LOGEMENT" id="2F43045D-AE2E-05CC-572A-9CB936FF09EA">
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-01 15:28:05 UTC</createdTime>
+<ownerDesignName>GESTION_LIEUX</ownerDesignName>
+<segment>1609BCEE-55C8-0FEF-D7C3-7BD5757B73F7</segment>
+<tableSpace>3594C73C-E340-D7C6-2C27-74E2E44867FE</tableSpace>
+<existingIndex>E5F0FCB6-4CB9-2F89-EF8F-8AC059A8D9DE</existingIndex>
+<indexSegment>1609BCEE-55C8-0FEF-D7C3-7BD5757B73F7</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

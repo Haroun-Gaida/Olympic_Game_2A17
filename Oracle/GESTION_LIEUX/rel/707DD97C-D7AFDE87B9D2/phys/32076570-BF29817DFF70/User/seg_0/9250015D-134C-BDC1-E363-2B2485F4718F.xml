@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="DHIA" directorySegmentName="seg_0" id="9250015D-134C-BDC1-E363-2B2485F4718F">
+<sourceConnName>data</sourceConnName>
+<sourceObjName>DHIA</sourceObjName>
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-01 15:14:25 UTC</createdTime>
+<ownerDesignName>GESTION_LIEUX</ownerDesignName>
+<schemaObject>EC00F58E-F12C-6667-112F-27802B52EDE9</schemaObject>
+<defTableSpace>3594C73C-E340-D7C6-2C27-74E2E44867FE</defTableSpace>
+<privileges>UNLIMITED TABLESPACE</privileges>
+</UserOraclev10g>

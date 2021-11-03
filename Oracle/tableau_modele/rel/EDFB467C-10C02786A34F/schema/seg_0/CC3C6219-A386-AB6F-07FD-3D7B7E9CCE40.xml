@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="DHIA" directorySegmentName="seg_0" id="CC3C6219-A386-AB6F-07FD-3D7B7E9CCE40">
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-03 16:05:16 UTC</createdTime>
+<ownerDesignName>tableau_modele</ownerDesignName>
+</SchemaObject>

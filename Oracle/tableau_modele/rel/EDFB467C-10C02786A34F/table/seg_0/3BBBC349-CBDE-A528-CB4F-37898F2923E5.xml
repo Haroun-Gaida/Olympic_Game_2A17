@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3BBBC349-CBDE-A528-CB4F-37898F2923E5" schemaObject="CC3C6219-A386-AB6F-07FD-3D7B7E9CCE40" name="TERRAIN_DE_JEUX">
+<sourceConnName>data</sourceConnName>
+<sourceObjSchema>DHIA</sourceObjSchema>
+<sourceObjName>TERRAIN_DE_JEUX</sourceObjName>
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-03 16:05:25 UTC</createdTime>
+<ownerDesignName>tableau_modele</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NOM" id="25984580-E330-080F-0E97-243249C3030C">
+<sourceConnName>data</sourceConnName>
+<sourceObjSchema>TERRAIN_DE_JEUX</sourceObjSchema>
+<sourceObjName>NOM</sourceObjName>
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-03 16:05:25 UTC</createdTime>
+<ownerDesignName>tableau_modele</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LIEUX" id="E9F26E1E-6EC9-0117-453F-C2947D00CB85">
+<sourceConnName>data</sourceConnName>
+<sourceObjSchema>TERRAIN_DE_JEUX</sourceObjSchema>
+<sourceObjName>LIEUX</sourceObjName>
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-03 16:05:25 UTC</createdTime>
+<ownerDesignName>tableau_modele</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="62AFCF3D-C568-A611-00FB-6D65091BD98C" name="N_TERRAIN">
+<sourceConnName>data</sourceConnName>
+<sourceObjSchema>DHIA</sourceObjSchema>
+<sourceObjName>N_TERRAIN</sourceObjName>
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-03 16:05:25 UTC</createdTime>
+<ownerDesignName>tableau_modele</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="25984580-E330-080F-0E97-243249C3030C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BE4DC407-7172-67BF-FB0A-91743515F9FB" schemaObject="CC3C6219-A386-AB6F-07FD-3D7B7E9CCE40" name="N_TERRAIN">
+<sourceConnName>data</sourceConnName>
+<sourceObjSchema>DHIA</sourceObjSchema>
+<sourceObjName>N_TERRAIN</sourceObjName>
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-03 16:05:25 UTC</createdTime>
+<ownerDesignName>tableau_modele</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="25984580-E330-080F-0E97-243249C3030C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="tableau_modele" id="1BE7E56D-E54A-2A1B-EA30-CFCC807786FD" version="3.5">
+<createdBy>dhia-</createdBy>
+<createdTime>2021-11-03 16:04:14 UTC</createdTime>
+<ownerDesignName>tableau_modele</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>1BE7E56D-E54A-2A1B-EA30-CFCC807786FD</designId>
+</OSDM_Design>

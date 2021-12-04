@@ -1,6 +1,7 @@
 #ifndef STATJ_H
 #define STATJ_H
 
+
 #include <QDialog>
 
 namespace Ui {
@@ -14,7 +15,8 @@ class statj : public QDialog
 public:
     explicit statj(QWidget *parent = nullptr);
     ~statj();
-
+    QList<qreal> stat_j();
+      QList <QString> stat_j_nom();
 private:
     Ui::statj *ui;
 };

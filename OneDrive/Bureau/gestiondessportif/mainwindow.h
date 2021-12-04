@@ -13,7 +13,7 @@
 #include <QDialog>
 #include <QFile>
 #include "dialog_email.h"
-
+#include"historique.h"
 
 
 
@@ -57,6 +57,8 @@ private:
     SPORTIF Etmp1;
     PERFORMANCE Etmp2;
     Dialog_email *dialog_email;
+    Historique histo;
+
 
 
 };

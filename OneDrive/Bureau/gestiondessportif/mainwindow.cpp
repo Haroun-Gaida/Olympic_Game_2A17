@@ -55,9 +55,12 @@ void MainWindow::on_pushButton_2_clicked()
     QString FORFAIT=ui->le2->text();
     QString TESTD=ui->le3->text();
     QString EMAIL=ui->leem->text();
+    QString NATIONALITE=ui->lena->text();
+
+    histo.save("id:"+ui->le_id->text(),"dicipline :"+ui->le1->text());
 
 
-    SPORTIF s(ID,SCORE,NOM,PRENOM,DICIPLINE,FORFAIT,TESTD,EMAIL);
+    SPORTIF s(ID,SCORE,NOM,PRENOM,DICIPLINE,FORFAIT,TESTD,EMAIL,NATIONALITE);
     bool test=s.ajouter();
     if(test)
     {
@@ -102,8 +105,10 @@ void MainWindow::on_pushButton_3_clicked()
        QString TESTD=ui->lineEdit_6->text();
        QString FORFAIT =ui->lineEdit_7->text();
        QString EMAIL=ui->leem2->text();
+       QString NATIONALITE=ui->lena1->text();
 
-       SPORTIF a(ID,SCORE,NOM,PRENOM,DICIPLINE,FORFAIT,TESTD,EMAIL);
+
+       SPORTIF a(ID,SCORE,NOM,PRENOM,DICIPLINE,FORFAIT,TESTD,EMAIL,NATIONALITE);
      bool test=a.modifier(ID);
      if(test)
      {
@@ -131,8 +136,10 @@ void MainWindow::on_pushButton_4_clicked()
                     QSqlQueryModel * Modal=new  QSqlQueryModel();
 
                     QSqlQuery qry;
-                     qry.prepare("SELECT * FROM SPORTIF ");
-                     qry.exec();
+                    // qry.prepare("SELECT * FROM SPORTIF ");
+                    qry.prepare("SELECT ID,NOM,PRENOM,DISCIPLINE,FORFAIT FROM SPORTIF ");
+
+                    qry.exec();
                      Modal->setQuery(qry);
                      table_facture.setModel(Modal);
 

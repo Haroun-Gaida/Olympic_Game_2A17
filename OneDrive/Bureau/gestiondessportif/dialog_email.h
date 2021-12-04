@@ -8,7 +8,7 @@
 #include <QFileDialog>
 
 namespace Ui {
-class Dialog_email;
+class Dialog_email;//hh
 }
 
 class Dialog_email : public QDialog

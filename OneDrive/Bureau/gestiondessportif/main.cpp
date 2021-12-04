@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
     w.show();
 
     QMessageBox::information(nullptr,QObject::tr("database is open "),QObject::tr("connection successful.\n"
-                                                                                  "click cancel to exit."),QMessageBox::Cancel);
+                                                                                  "click cancel to exit."),QMessageBox::Cancel);//hh
     }
     else
         QMessageBox::critical(nullptr,QObject::tr("data is not open"),QObject::tr("connection failed.\n"

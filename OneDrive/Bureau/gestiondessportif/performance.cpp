@@ -29,7 +29,7 @@ QSqlQueryModel*PERFORMANCE::afficher()
 {
 QSqlQueryModel * model=new QSqlQueryModel();
 model->setQuery("select * from PERFORMANCE");
-model->setHeaderData(0,Qt::Horizontal,QObject::tr("ID"));
+model->setHeaderData(0,Qt::Horizontal,QObject::tr("ID"));//hh
 model->setHeaderData(1,Qt::Horizontal,QObject::tr("NOM"));
 model->setHeaderData(2,Qt::Horizontal,QObject::tr("PRENOM"));
 model->setHeaderData(3,Qt::Horizontal,QObject::tr("SCORE"));

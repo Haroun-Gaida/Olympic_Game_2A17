@@ -14,6 +14,7 @@
 #include <QFile>
 #include "dialog_email.h"
 #include"historique.h"
+#include"statj.h"
 
 
 
@@ -28,14 +29,13 @@ class MainWindow : public QMainWindow
 
 public:
     MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
+    ~MainWindow();//hh
 
 private slots:
     void on_pushButton_2_clicked();
 
     void on_pushButton_clicked();
 
-    void on_pushButton_3_clicked();
 
     void on_pushButton_4_clicked();
 
@@ -49,6 +49,10 @@ private slots:
 
     void on_excel_clicked();
 
+    void on_pushButton_7_clicked();
+
+    void on_pushButton_13_clicked();
+
 private:
 
     Ui::MainWindow *ui;
@@ -58,6 +62,7 @@ private:
     PERFORMANCE Etmp2;
     Dialog_email *dialog_email;
     Historique histo;
+    statj *stat_j;
 
 
 

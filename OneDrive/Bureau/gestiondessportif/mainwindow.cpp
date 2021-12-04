@@ -22,7 +22,7 @@
 #include <QSystemTrayIcon>
 #include <QFile>
 #include <QFileDialog>
-
+#include"statj.h"
 
 
 
@@ -34,7 +34,6 @@ MainWindow::MainWindow(QWidget *parent)
     ui->tableView->setModel(Etmp.afficher());
     ui->tableView2->setModel(Etmp2.afficher());
 
-    ui->tableView1->setModel(Etmp1.statistic());
 
 }
 
@@ -47,7 +46,7 @@ MainWindow::~MainWindow()
 void MainWindow::on_pushButton_2_clicked()
 {
     int ID=ui->le_id->text().toInt();
-    int SCORE=ui->lescore->text().toInt();
+    int SCORE=ui->lescore->text().toInt();//hh
 
     QString NOM=ui->le_nom->text();
     QString PRENOM=ui->le_prenom->text();
@@ -65,7 +64,6 @@ void MainWindow::on_pushButton_2_clicked()
     if(test)
     {
         ui->tableView->setModel(Etmp.afficher());
-        ui->tableView1->setModel(Etmp1.statistic());
 
         QMessageBox::information(nullptr,QObject::tr("database is open "),QObject::tr("create successful.\n"
                                                                                       "click cancel to exit."),QMessageBox::Cancel);
@@ -82,7 +80,6 @@ bool test=Etmp.supprimer(ID);
 if(test)
 {
     ui->tableView->setModel(Etmp.afficher());
-    ui->tableView1->setModel(Etmp1.statistic());
 
 
     QMessageBox::information(nullptr,QObject::tr("database is open "),QObject::tr("delete successful.\n"
@@ -94,36 +91,7 @@ else
 }
 
 
-void MainWindow::on_pushButton_3_clicked()
-{
-    int ID =ui->lineEdit->text().toInt();
-    int SCORE=ui->lescore1->text().toInt();
 
-       QString NOM=ui->lineEdit_2->text();
-       QString PRENOM=ui->lineEdit_3->text();
-       QString DICIPLINE=ui->lineEdit_5->text();
-       QString TESTD=ui->lineEdit_6->text();
-       QString FORFAIT =ui->lineEdit_7->text();
-       QString EMAIL=ui->leem2->text();
-       QString NATIONALITE=ui->lena1->text();
-
-
-       SPORTIF a(ID,SCORE,NOM,PRENOM,DICIPLINE,FORFAIT,TESTD,EMAIL,NATIONALITE);
-     bool test=a.modifier(ID);
-     if(test)
-     {
-         ui->tableView->setModel(Etmp.afficher());
-         ui->tableView1->setModel(Etmp1.statistic());
-
-
-
-         QMessageBox::information(nullptr,QObject::tr("database is open "),QObject::tr("modification successful.\n"
-                                                                                       "click cancel to exit."),QMessageBox::Cancel);
-     }
-     else
-         QMessageBox::critical(nullptr,QObject::tr("data is not open"),QObject::tr("modification failed.\n"
-                                                                                   "click cancel to exit."),QMessageBox::Cancel);
-}
 
 
 void MainWindow::on_pushButton_4_clicked()
@@ -137,7 +105,7 @@ void MainWindow::on_pushButton_4_clicked()
 
                     QSqlQuery qry;
                     // qry.prepare("SELECT * FROM SPORTIF ");
-                    qry.prepare("SELECT ID,NOM,PRENOM,DISCIPLINE,FORFAIT FROM SPORTIF ");
+                    qry.prepare("SELECT ID,NOM,PRENOM,DISCIPLINE,FORFAIT,NATIONALITÉ FROM SPORTIF ");
 
                     qry.exec();
                      Modal->setQuery(qry);
@@ -311,3 +279,41 @@ void MainWindow::on_excel_clicked()
 
 
 
+
+void MainWindow::on_pushButton_7_clicked()
+{
+    stat_j=new statj(this);
+    stat_j->show();
+}
+
+void MainWindow::on_pushButton_13_clicked()
+{
+    int ID=ui->le_id->text().toInt();
+    int SCORE=ui->lescore->text().toInt();
+
+    QString NOM=ui->le_nom->text();
+    QString PRENOM=ui->le_prenom->text();
+    QString DICIPLINE=ui->le1->text();
+    QString FORFAIT=ui->le2->text();
+    QString TESTD=ui->le3->text();
+    QString EMAIL=ui->leem->text();
+    QString NATIONALITE=ui->lena->text();
+
+
+
+    SPORTIF a(ID,SCORE,NOM,PRENOM,DICIPLINE,FORFAIT,TESTD,EMAIL,NATIONALITE);
+
+     bool test=a.modifier(ID);
+     if(test)
+     {
+         ui->tableView->setModel(Etmp.afficher());
+
+
+
+         QMessageBox::information(nullptr,QObject::tr("database is open "),QObject::tr("modification successful.\n"
+                                                                                       "click cancel to exit."),QMessageBox::Cancel);
+     }
+     else
+         QMessageBox::critical(nullptr,QObject::tr("data is not open"),QObject::tr("modification failed.\n"
+                                                                                   "click cancel to exit."),QMessageBox::Cancel);
+}

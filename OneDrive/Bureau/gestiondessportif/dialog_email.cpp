@@ -16,7 +16,7 @@ void Dialog_email::browse()
 {
     files.clear();
 
-    QFileDialog dialog(this);
+    QFileDialog dialog(this);//hh
     dialog.setDirectory(QDir::homePath());
     dialog.setFileMode(QFileDialog::ExistingFiles);
 

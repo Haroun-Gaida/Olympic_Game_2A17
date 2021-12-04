@@ -19,7 +19,7 @@ public:
     QString getprenom(){return PRENOM;}
 
     int getid(){return ID;}
-    int getscore(){return SCORE;}
+    int getscore(){return SCORE;}//hh
 
 
     void setnom(QString n){NOM=n;}

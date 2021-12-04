@@ -26,7 +26,8 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     performance.cpp \
-    smtp.cpp
+    smtp.cpp \
+    statj.cpp
 
 HEADERS += \
     adruino.h \
@@ -36,11 +37,13 @@ HEADERS += \
     historique.h \
     mainwindow.h \
     performance.h \
-    smtp.h
+    smtp.h \
+    statj.h
 
 FORMS += \
     dialog_email.ui \
-    mainwindow.ui
+    mainwindow.ui \
+    statj.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

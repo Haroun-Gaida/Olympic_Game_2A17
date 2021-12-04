@@ -11,7 +11,7 @@ SPORTIF::SPORTIF(int id,int score,QString nom, QString prenom,QString discipline
     this->FORFAIT=forfait;
     this->TESTD=testd;
     this->EMAIL=email;
-this ->NATIONALITE=nationalite;
+this ->NATIONALITE=nationalite;//hh
 
 }
 bool SPORTIF::ajouter()

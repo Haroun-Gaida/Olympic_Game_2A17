@@ -6,7 +6,7 @@ class connection
 {
     QSqlDatabase db;
 public:
-    connection();
+    connection();//hh
     bool createconnection();
     void closeconnection();
 

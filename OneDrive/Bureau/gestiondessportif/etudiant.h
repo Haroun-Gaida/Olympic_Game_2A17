@@ -17,7 +17,7 @@ private:
 public:
     SPORTIF(){}
     SPORTIF(int,int,QString,QString,QString,QString,QString,QString,QString);
-    QString getnom(){return NOM;}
+    QString getnom(){return NOM;}//hh
     QString getprenom(){return PRENOM;}
     QString gettestd(){return TESTD;}
     QString getforfait(){return FORFAIT;}

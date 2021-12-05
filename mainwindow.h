@@ -29,6 +29,8 @@ private slots:
 
     void on_modifier_equipe_clicked();
 
+    void on_tab_classement_activated(const QModelIndex &index);
+
 private:
     Ui::MainWindow *ui;
     Sport S;

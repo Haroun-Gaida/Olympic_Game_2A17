@@ -10,27 +10,30 @@
 
 class Equipe
 {
-    int idE;
+    int idE,points;
     QString nomE,typeE,pays,sportE;
 
 public:
     Equipe();
-    Equipe(int,QString,QString,QString,QString);
+    Equipe(int,int,QString,QString,QString,QString);
 
     int getIDE();
     QString getNom();
     QString getType();
     QString getPays();
     QString getSport();
+    int getPoints();
 
     void setIDE(int idE);
     void setNom(QString ne);
     void setType(QString te);
     void setSport(QString se);
     void setPays(QString pe);
+    void setPoints(int points);
 
     bool ajouter();
     QSqlQueryModel * afficher();
+    QSqlQueryModel * tri();
     bool supprimer(int);
     bool modifier(int);
 };
